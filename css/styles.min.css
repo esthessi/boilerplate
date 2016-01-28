@@ -387,10 +387,6 @@ th {
 }
 
 /* Grid for very small displays */
-.container {
-  width: 538px;
-}
-
 .col-xs-12 {
   width: 100%;
 }
@@ -447,7 +443,7 @@ th {
 /* Grid for tablets */
 @media (min-width: 768px) {
   .container {
-    width: 750px;
+    width: 738px;
   }
 
   .col-s-12 {
@@ -506,7 +502,7 @@ th {
 /* Grid for standard Desktop */
 @media (min-width: 992px) {
   .container {
-    width: 970px;
+    width: 962px;
   }
 
   .col-m-12 {
@@ -655,15 +651,8 @@ p {
   font-size: 0.8rem;
 }
 
-.container {
-  margin: 0 auto;
-  width: 60%;
-  padding-right: 1rem;
-  padding-left: 1rem;
-}
-
 h2 {
-  font-size: 1.5rem;
+  font-size: 2.25rem;
 }
 
 .log-in-button {
