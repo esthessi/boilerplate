@@ -368,14 +368,6 @@ th {
   padding: 0;
 }
 
-* {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: "Roboto", sans-serif;
-}
-
 /* ### Container Part ### */
 .container {
   padding-right: 15px;
@@ -637,12 +629,41 @@ body {
   padding-left: 15px;
 }
 
-.margin {
-  margin-top: 10px;
+html {
+  margin: 0;
+  height: 100%;
+  font-size: 13px;
+}
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  html {
+    font-size: 16px;
+  }
 }
 
-.bg-colored {
-  background-color: #c0c0c0;
+body {
+  background-color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+}
+
+p {
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+.container {
+  margin: 0 auto;
+  width: 60%;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+h2 {
+  font-size: 1.5rem;
 }
 
 .log-in-button {
