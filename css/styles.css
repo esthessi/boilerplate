@@ -669,3 +669,28 @@ h2 {
 .log-in-button {
   background-color: red;
 }
+
+nav {
+  position: fixed;
+  overflow: hidden;
+  margin: 0;
+  border: 0;
+  width: 100%;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.25);
+}
+
+.navbar {
+  color: #ffffff;
+}
+.navbar ul {
+  list-style-type: none;
+}
+.navbar ul li {
+  display: inline;
+  vertical-align: baseline;
+}
+.navbar ul li h1 {
+  margin: 0;
+  font-size: 24px;
+}
