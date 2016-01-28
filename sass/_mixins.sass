@@ -3,3 +3,19 @@
     content: ""
     display: table
     clear: both
+    
+
+@mixin very-small-viewport()
+  @content
+
+@mixin small-viewport()
+  @media screen and (min-width: 538px)
+    @content
+
+@mixin medium-viewport()
+  @media screen and (min-width: 768px)
+    @content
+
+@mixin wide-viewport()
+  @media screen and (min-width: 1200px)
+    @content
