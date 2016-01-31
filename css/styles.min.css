@@ -368,6 +368,39 @@ th {
   padding: 0;
 }
 
+html {
+  margin: 0;
+  height: 100%;
+  font-size: 13px;
+}
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 992px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+body {
+  background-color: #ffffff;
+  font-family: "OpenSans", sans-serif;
+}
+
+p {
+  padding: 15px;
+  font-family: OpenSans-Light;
+  font-size: 1rem;
+  line-height: 1.6rem;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2.25rem;
+}
+
 /* ### Container Part ### */
 .container {
   padding-right: 15px;
@@ -387,10 +420,6 @@ th {
 }
 
 /* Grid for very small displays */
-.container {
-  width: 538px;
-}
-
 .col-xs-12 {
   width: 100%;
 }
@@ -445,9 +474,9 @@ th {
 }
 
 /* Grid for tablets */
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .container {
-    width: 750px;
+    width: 738px;
   }
 
   .col-s-12 {
@@ -504,9 +533,9 @@ th {
   }
 }
 /* Grid for standard Desktop */
-@media (min-width: 992px) {
+@media screen and (min-width: 992px) {
   .container {
-    width: 970px;
+    width: 962px;
   }
 
   .col-m-12 {
@@ -629,43 +658,6 @@ th {
   padding-left: 15px;
 }
 
-html {
-  margin: 0;
-  height: 100%;
-  font-size: 13px;
-}
-@media screen and (min-width: 768px) {
-  html {
-    font-size: 14px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  html {
-    font-size: 16px;
-  }
-}
-
-body {
-  background-color: #ffffff;
-  font-family: "Open Sans", sans-serif;
-}
-
-p {
-  text-align: center;
-  font-size: 0.8rem;
-}
-
-.container {
-  margin: 0 auto;
-  width: 60%;
-  padding-right: 1rem;
-  padding-left: 1rem;
-}
-
-h2 {
-  font-size: 1.5rem;
-}
-
 .log-in-button {
   background-color: red;
 }
@@ -693,4 +685,44 @@ nav {
 .navbar ul li h1 {
   margin: 0;
   font-size: 24px;
+}
+
+.jumbotron-bg-image {
+  min-height: 45vw;
+  background-color: #FFD7D4;
+  background-image: url("/images/jumbotron_red.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
+
+.jumbotron {
+  margin: 0 auto;
+  max-width: 822px;
+}
+
+.jumbotron-heading {
+  padding-top: 20%;
+  font-size: 3rem;
+  line-height: 4.0625rem;
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+}
+.jumbotron-heading:before {
+  content: "";
+  display: block;
+  margin-bottom: 4%;
+  max-height: 259px;
+  padding-top: 33%;
+  background-image: url("/images/callout.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: auto 100%;
+}
+
+.jumbotron-text {
+  padding-top: 2%;
+  padding-bottom: 20%;
+  line-height: 1.6rem;
+  color: #D8D8D8;
 }
