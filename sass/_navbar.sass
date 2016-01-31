@@ -4,20 +4,34 @@ nav
   margin: 0
   border: 0
   width: 100%
-  padding: 1rem
+  padding: 0
   background: rgba(0,0,0,0.25)
 
-
 .navbar
+  text-align: right
   color: $font-color-white
   ul
     list-style-type: none
+    margin: 2.5rem
     li
       display: inline
-      vertical-align: baseline
+      padding: 0 (0.5 * $default-padding)
+      font-family: OpenSans-Light
+      text-transform: uppercase
       h1
         margin: 0
         font-size: 24px
+
+.nav-logo:before
+  display: block
+  padding: 0
+  margin-bottom: -(1.4 * $default-padding)
+  min-height: $default-line-height
+  background-image: url('/images/logo_lerngruppe.png')
+  background-repeat: no-repeat
+  background-position: left
+  background-size: auto 100%
+  content: ''
 
 //.nav-item
   
