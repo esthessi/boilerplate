@@ -5,17 +5,21 @@
     clear: both
     
 
-@mixin very-small-viewport()
+@mixin xs-viewport()
   @content
 
-@mixin small-viewport()
-  @media screen and (min-width: 538px)
+@mixin sm-viewport()
+  @media screen and (min-width: $min-width-sm-viewport)
     @content
 
-@mixin medium-viewport()
-  @media screen and (min-width: 768px)
+@mixin md-viewport()
+  @media screen and (min-width: $min-width-md-viewport)
     @content
 
-@mixin wide-viewport()
-  @media screen and (min-width: 1200px)
+@mixin lg-viewport()
+  @media screen and (min-width: $min-width-lg-viewport)
+    @content
+
+@mixin hd-viewport()
+  @media screen and (min-width: $min-width-hd-viewport)
     @content
