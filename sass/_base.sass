@@ -2,19 +2,23 @@ html
   margin: 0
   height: 100%
   font-size: 13px
-  +medium-viewport             //ausgeschrieben: @include medium-viewport
+  +medium-viewport                  //ausgeschrieben: @include medium-viewport
     font-size: 14px
   +wide-viewport
     font-size: 16px
 
 body
   background-color: $bg-white
-  font-family: 'Open Sans', sans-serif
+  font-family: 'OpenSans', sans-serif
 
 p
+  font-family: OpenSans-Light
+  font-size: 1rem
+  line-height: $default-line-height
   text-align: center
-  font-size: 0.8rem
+  padding: $default-padding
+
 
 //Überschriften
 h2
-  font-size: 1.5rem           //24px
+  font-size: $font-size-heading   //24px

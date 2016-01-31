@@ -643,34 +643,61 @@ html {
 
 body {
   background-color: #ffffff;
-  font-family: "Open Sans", sans-serif;
+  font-family: "OpenSans", sans-serif;
 }
 
 p {
+  font-family: OpenSans-Light;
+  font-size: 1rem;
+  line-height: 1.6rem;
   text-align: center;
-  font-size: 0.8rem;
+  padding: 0.9375rem;
 }
 
 h2 {
-  font-size: 1.5rem;
+  font-size: 2.25rem;
 }
 
 .log-in-button {
   background-color: red;
 }
 
-.header-bg-image {
-  width: 100%;
-  height: 100%;
+.jumbotron-bg-image {
+  min-height: 45vw;
   background-color: #FFD7D4;
   background-image: url("/images/pic_jumbo_red.png");
   background-repeat: no-repeat;
-  background-position: center top;
-  background-size: contain;
-  color: #D8D8D8;
+  background-position: top center;
+  background-size: cover;
 }
 
-.pros {
+.jumbotron {
+  margin: 0 auto;
+  max-width: 822px;
+}
+
+.jumbotron-heading {
+  padding-top: 20%;
   font-size: 3rem;
+  line-height: 4.0625rem;
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
   color: #ffffff;
+}
+.jumbotron-heading:before {
+  content: "";
+  display: block;
+  margin-bottom: 4%;
+  max-height: 259px;
+  padding-top: 33%;
+  background-image: url("/images/callout.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: auto 100%;
+}
+
+.jumbotron-text {
+  padding-top: 2%;
+  padding-bottom: 20%;
+  line-height: 1.6rem;
+  color: #D8D8D8;
 }
