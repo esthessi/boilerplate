@@ -1,55 +1,41 @@
 /* ### Container Part ###
 
 .container
-  padding-right: 15px
-  padding-left: 15px
+  padding-right: $default-padding
+  padding-left: $default-padding
   margin: 0 auto
 
 /* ### Grid Part ###
 
 .row
-  margin-right: -15px
-  margin-left: -15px
+  margin-right: -$default-padding
+  margin-left: -$default-padding
   @include clearfix
 
 /* Grid for very small displays
 
-.container
-  width: 538px
-
 .col-xs-12
   width: 100%
-
 .col-xs-11
   width: 91.66666667%
-
 .col-xs-10
   width: 83.33333333%
-
 .col-xs-9
   width: 75%
-
 .col-xs-8
   width: 66.66666667%
-
 .col-xs-7
   width: 58.33333333%
-
 .col-xs-6
   width: 50%
-
 .col-xs-5
   width: 41.66666667%
-
 .col-xs-4
   width: 33.33333333%
-
 .col-xs-3
   width: 25%
-
 .col-xs-2
   width: 16.66666667%
-
 .col-xs-1
   width: 8.33333333%
 
@@ -58,9 +44,10 @@
   word-wrap: break-word
 
 /* Grid for tablets
-@media (min-width: 768px)
++md-viewport
   .container
-    width: 750px
+    width: ($min-width-md-viewport) - (2 * $default-padding)
+  
   .col-s-12
     width: 100%
   .col-s-11
@@ -90,9 +77,10 @@
     word-wrap: break-word
 
 /* Grid for standard Desktop
-@media (min-width: 992px)
++lg-viewport
   .container
-    width: 970px
+    width: ($min-width-lg-viewport) - (2 * $default-padding)
+  
   .col-m-12
     width: 100%
   .col-m-11
@@ -124,7 +112,8 @@
 /* Grid for FullHD Desktop
 @media (min-width: 1200px)
   .container
-    width: 1170px
+    width: ($min-width-hd-viewport) - (2 * $default-padding)
+  
   .col-l-12
     width: 100%
   .col-l-11
@@ -157,5 +146,5 @@
   position: relative
   min-height: 1px
   /* Gutter
-  padding-right: 15px
-  padding-left: 15px
+  padding-right: $default-padding
+  padding-left: $default-padding
