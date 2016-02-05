@@ -1,15 +1,15 @@
 /* ### Container Part ###
 
 .container
-  padding-right: $default-padding
-  padding-left: $default-padding
+  padding-right: 2 * $default-padding
+  padding-left: 2 * $default-padding
   margin: 0 auto
 
 /* ### Grid Part ###
 
 .row
-  margin-right: -$default-padding
-  margin-left: -$default-padding
+  margin-right: - 2 * $default-padding
+  margin-left: - 2 * $default-padding
   @include clearfix
 
 /* Grid for very small displays
@@ -46,7 +46,7 @@
 /* Grid for tablets
 +md-viewport
   .container
-    width: ($min-width-md-viewport) - (2 * $default-padding)
+    width: ($min-width-md-viewport) - (4 * $default-padding)
   
   .col-s-12
     width: 100%
@@ -79,7 +79,7 @@
 /* Grid for standard Desktop
 +lg-viewport
   .container
-    width: ($min-width-lg-viewport) - (2 * $default-padding)
+    width: ($min-width-lg-viewport) - (4 * $default-padding)
   
   .col-m-12
     width: 100%
@@ -112,7 +112,7 @@
 /* Grid for FullHD Desktop
 +hd-viewport
   .container
-    width: ($min-width-hd-viewport) - (2 * $default-padding)
+    width: ($min-width-hd-viewport) - (4 * $default-padding)
   
   .col-l-12
     width: 100%
