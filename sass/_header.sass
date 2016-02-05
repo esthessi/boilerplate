@@ -1,5 +1,6 @@
 .jumbotron-bg-image
-  min-height: 45vw
+  min-height: 40vw
+  max-height: 880px
   background-color: $bg-colored
   background-image: url("/images/pic_jumbo_red.png")
   background-repeat: no-repeat
@@ -7,11 +8,12 @@
   background-size: cover
 
 .jumbotron
+  display: block
   margin: 0 auto  
   max-width: 822px
 
 .jumbotron-heading
-  padding-top: 20%
+  padding-top: 15%
   font-size: $font-size-jumbotron
   line-height: $jumbotron-line-height
   text-shadow: 0px 2px 4px rgba(0,0,0,0.50)
@@ -19,6 +21,7 @@
   &:before
     content: ''
     display: block
+    //margin-top: 25%
     margin-bottom: 4%
     max-height: 259px
     padding-top: 33%
